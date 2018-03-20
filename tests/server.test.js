@@ -57,8 +57,7 @@ const expectStatus = (expected, res, path) => {
   }
 };
 
-/* Makes a GET request using to the provided path. If body is given, sends it
- * along with the request. Checks for the expected status. */
+/* Makes a GET request using to the provided path. If body is given, sends it along with the request. Checks for the expected status. */
 const get = (path, status) => {
   return chai.request(server.server).get(path)
     .catch((err) => {
